@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>小系统</title>
+        <!-- js -->
+        <!-- css -->
+    </head>
+
+    <body>
+
+        <h1>药品录入 v1.0</h1>
+        <p>作者: 咸蛋小超人</p>
+
+        <p>填完以下表格:</p>
+        <form action="handler/add.php" name="add" method="post" autocomplete="off">
+
+            <table>
+
+                <tr>
+                    <th align="left">常用名</th>
+                    <th>:&nbsp;<input type="text" placeholder="商品名" name="name">&nbsp;&nbsp;&nbsp;*</th>
+                </tr>
+
+                <tr>
+                    <th align="left">学名</th>
+                    <th>:&nbsp;<input type="text" placeholder="化学名" name="sci_name">&nbsp;&nbsp;&nbsp;*</th>
+                </tr>
+
+                <tr>
+                    <th align="left">适用症</th>
+                    <th>:&nbsp;<input type="text" placeholder="治疗症状" name="symptom">&nbsp;&nbsp;&nbsp;*</th>
+                </tr>
+
+                <tr>
+                    <th align="left">厂商</th>
+                    <th align="left">:&nbsp;<input type="text" placeholder="生产厂商" name="producer"></th>
+                </tr>
+
+                <tr>
+                    <th align="left">价格(元)</th>
+                    <th>:&nbsp;<input type="text" placeholder="12.5" name="price">&nbsp;&nbsp;&nbsp;*</th>
+                </tr>
+
+                <tr>
+                    <th align="left">收取价格(元)</th>
+                    <th align="left">:&nbsp;<input type="text" placeholder="10" name="discount"></th>
+                </tr>
+
+                <tr>
+                    <th align="left">效果(0-5)</th>
+                    <th align="left">:&nbsp;<input type="text" placeholder="0分最差，5分最好" name="rank"></th>
+                </tr>
+
+                <tr>
+                    <th align="left">位置</th>
+                    <th>:&nbsp;<input type="text" placeholder="格式：柜台,层,从左数第几个" name="loc">&nbsp;&nbsp;&nbsp;*</th>
+                </tr>
+
+                <tr>
+                    <th align="left">剩余</th>
+                    <th>:&nbsp;<input type="text" placeholder="3" name="remain">&nbsp;&nbsp;&nbsp;*</th>
+                </tr>
+
+            </table>
+
+<!--
+            <div>常用名：
+                <input type="text" placeholder="阿莫西林" name="name">&nbsp;&nbsp;&nbsp;*
+            </div><br/>
+
+            <div>学名：
+                <input type="text" placeholder="xxx" name="sci_name">&nbsp;&nbsp;&nbsp;*
+            </div><br/>
+
+            <div>症状：
+                <input type="text" placeholder="感冒;头晕" name="symptom">&nbsp;&nbsp;&nbsp;*
+            </div><br/>
+
+            <div>厂商：
+                <input type="text" placeholder="阿莫西林" name="producer">
+            </div><br/>
+
+            <div>价格(元)：
+                <input type="text" placeholder="12" name="price">&nbsp;&nbsp;&nbsp;*
+            </div><br/>
+
+            <div>收取价格(元)：
+                <input type="text" placeholder="10" name="discount">
+            </div><br/>
+
+            <div>效果(0-5)：
+                <input type="text" placeholder="0分最差，5分最好" name="rank">
+            </div><br/>
+
+            <div>位置：
+                <input type="text" placeholder="格式：柜台,层,从左数第几个" name="loc">&nbsp;&nbsp;&nbsp;*
+            </div><br/>
+-->
+            <!-- 对齐按钮 -->
+            <br>
+            <table>
+                <tr>
+                    <th align="left" width="120"><input type="submit" style="width: 100%;" value="提交"></th>
+                    <th align="right" width="120"><input type="reset" style="width: 100%;" value="清空"></th>
+                </tr>
+            </table>
+
+        </form>
+
+    <!-- 插入js 代码判断数据合法与否 -->
+
+
+    </body>
+
+</html>

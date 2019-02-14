@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>小系统</title>
+    <!-- js -->
+    <!-- css -->
+</head>
+
+    <body>
+        <h1>药品查询 v1.0</h1>
+        <p>作者: 咸蛋小超人</p>
+
+        <!-- search form -->
+        <form action="handler/search.php" method="post" >
+            请输入名称：<input type="text" name="user_input"/>
+            <select id="seo" name="search_options" autofocus onfocus="getSelectedValue(this.options[this.selectedIndex].value)" onchange="getSelectedValue(this.options[this.selectedIndex].value)">
+                <option selected="selected" value="1">常用名</option>
+                <option value="2">学名</option>
+                <option value="3">效果</option>
+            </select>
+
+            <br/>
+            <input type="submit" value="提交"/>
+            <input type="reset" value="清空"/>
+            <input hidden="hidden" id="choice" name="choice" />
+        </form>
+        <p><a href="../index.html" >返回首页</a></p>
+    </body>
+
+<script>
+//    function getSelectedValue() {                     //这种方法传递<select>的值不可行，也不知道是为什么...
+//        obj = document.getElementById("seo")
+//        str = obj.options[obj.selectedIndex].value
+//        alert(str)
+//        document.getElementById('choice').setAttribute('value', str)
+//    }
+    function getSelectedValue(str) {
+        document.getElementById('choice').value = str
+    }
+</script>
+
+</html>
